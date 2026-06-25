@@ -1,0 +1,273 @@
+/* ===================================
+   GOOGLE FONT & RESET
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#2563eb,#06b6d4);
+    color:#fff;
+    line-height:1.7;
+}
+
+/* ===================================
+   NAVBAR
+=================================== */
+
+.navbar{
+    position:sticky;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(255,255,255,.10);
+    backdrop-filter:blur(15px);
+    z-index:1000;
+    box-shadow:0 4px 20px rgba(0,0,0,.15);
+}
+
+.logo{
+    font-size:1.6rem;
+    font-weight:700;
+    color:#fff;
+}
+
+.logo i{
+    margin-right:8px;
+    color:#ffe082;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffe082;
+}
+
+/* ===================================
+   HERO
+=================================== */
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:60px;
+    padding:70px 8%;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:3.5rem;
+    margin-bottom:20px;
+}
+
+.hero-text span{
+    color:#ffe082;
+}
+
+.hero-text p{
+    font-size:1.15rem;
+    max-width:550px;
+    margin-bottom:35px;
+    color:#f5f5f5;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#fff;
+    color:#2563eb;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 30px rgba(0,0,0,.25);
+}
+
+/* ===================================
+   HERO IMAGE
+=================================== */
+
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-image img{
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #fff;
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+    transition:.3s;
+}
+
+.hero-image img:hover{
+    transform:scale(1.03);
+}
+
+/* ===================================
+   SECTIONS
+=================================== */
+
+.about,
+.projects,
+.contact{
+    padding:80px 8%;
+}
+
+.about h2,
+.projects h2,
+.contact h2{
+    text-align:center;
+    font-size:2.4rem;
+    margin-bottom:35px;
+}
+
+.about p{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+    font-size:1.1rem;
+}
+
+/* ===================================
+   PROJECT CARDS
+=================================== */
+
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    background:#fff;
+    color:#222;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.35s;
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 45px rgba(0,0,0,.25);
+}
+
+.card img{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    display:block;
+}
+
+.card h3{
+    padding:18px 18px 10px;
+    font-size:1.3rem;
+}
+
+.card p{
+    padding:0 18px 22px;
+    color:#555;
+    line-height:1.6;
+}
+
+/* ===================================
+   CONTACT
+=================================== */
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:15px 0;
+    font-size:1.1rem;
+}
+
+.contact i{
+    margin-right:10px;
+    color:#ffe082;
+}
+
+/* ===================================
+   FOOTER
+=================================== */
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:rgba(0,0,0,.20);
+    font-size:.95rem;
+    margin-top:30px;
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media(max-width:900px){
+
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+        gap:40px;
+    }
+
+    .hero-text h1{
+        font-size:2.6rem;
+    }
+
+    .hero-text p{
+        margin:auto;
+        margin-bottom:30px;
+    }
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav a{
+        margin:0 10px;
+    }
+
+    .hero-image img{
+        width:220px;
+        height:220px;
+    }
+
+    .about h2,
+    .projects h2,
+    .contact h2{
+        font-size:2rem;
+    }
+}
