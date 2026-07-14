@@ -1,28 +1,49 @@
-# Portfolio Website Deployment using Docker & AWS EC2
+# DevOps Internship Portfolio Project
 
-## Project Overview
-This project demonstrates deploying a static portfolio website using Docker and AWS EC2.
+## Overview
+This repository contains my internship project demonstrating website development, AWS cloud deployment, Docker containerization, and CI/CD automation using GitHub Actions.
 
 ## Technologies Used
 - HTML
 - CSS
-- Docker
-- Nginx
-- AWS EC2
 - Git
 - GitHub
+- AWS S3
+- AWS CloudFront
+- AWS EC2
+- Docker
+- Nginx
+- Docker Hub
+- GitHub Actions
 
-## Deployment Steps
-1. Created the portfolio website.
-2. Created the Dockerfile.
-3. Built the Docker image.
-4. Tested locally using Docker.
-5. Launched an AWS EC2 Ubuntu instance.
-6. Installed Docker on EC2.
-7. Cloned the GitHub repository.
-8. Built the Docker image on EC2.
-9. Ran the Docker container.
-10. Verified the website using the EC2 Public IP.
+## Task 1 - Static Website Deployment
+- Built a responsive portfolio website.
+- Hosted the website using Amazon S3 Static Website Hosting.
+- Configured CloudFront for HTTPS delivery.
+
+## Task 2 - Docker & EC2 Deployment
+- Created a Dockerfile.
+- Built and tested the Docker image locally.
+- Deployed the Docker container on an AWS EC2 Ubuntu instance.
+
+## Task 3 - CI/CD Automation
+- Created a GitHub Actions workflow.
+- Configured Docker Hub integration using GitHub Secrets.
+- Automated Docker image build and push on every push to the main branch.
+
+## Project Structure
+
+```
+.
+ÃÄÄ index.html
+ÃÄÄ style.css
+ÃÄÄ Dockerfile
+ÃÄÄ README.md
+ÃÄÄ assets/
+ÀÄÄ .github/
+    ÀÄÄ workflows/
+        ÀÄÄ docker-ci.yml
+```
 
 ## Live Website
 http://16.171.12.245
@@ -30,3 +51,8 @@ http://16.171.12.245
 ## GitHub Repository
 https://github.com/vinodbanoth1/vinod-portfolio
 
+## Docker Hub Repository
+https://hub.docker.com/r/vinod1219/portfolio-website
+
+## Author
+Vinod Banoth
